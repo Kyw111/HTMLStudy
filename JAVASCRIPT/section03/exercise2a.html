@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise2</title>
+</head>
+    <style>
+        table, td {
+            border: 1px solid grey;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+<body>
+    <script>
+        document.write("<table>");
+            for(var h = 2; h <= 9; h++){
+                document.write("<th>" + h + "단</th>");
+            }
+        document.write("<tr>");
+                for( var x = 1; x <= 9; x++){
+                    for( var y = 2; y <= 9; y++){
+                        document.write("<td>" + y + "x" + x + "=" + x*y + "</td>");
+                    }
+                    document.write("</tr>");
+                }
+                document.write("</table>")
+    </script>
+
+</body>
+</html>

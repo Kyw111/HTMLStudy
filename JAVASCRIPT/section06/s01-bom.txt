@@ -1,0 +1,10 @@
+BOM( Browser Object Model ) - 브라우저 객체 모델
+
+(브라우저 객체의 계층적 구조)
+    - window
+        - document
+        - screen
+        - location
+        - history
+        - navigator
+

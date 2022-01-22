@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script>
+        function weight(name, height, weight){
+            this.name = name;
+            this.height = height;
+            this.weight = weight;
+
+            this.infomation = function(){
+                document.write('이름: ', this.name, '<br>');
+                document.write('신장: ', this.height, '<br>');
+                document.write('체중: ', this.weight, '<br>');
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h2>자바스크립트 객체 생성자 함수</h2>
+    <p>
+        객체를 생성하기 위해서는 함수를 new를 통해서 생성해줘야한다.
+        객체생성자 함수인 weight()를 new해줘야 참조객체가 리턴된다.
+    </p>
+    <hr>
+    <script>
+        var park = new weight('박세리', 167, 61); 
+        park.infomation();
+
+        var lee = new weight('이영화', 177, 75);
+        lee.infomation();
+    </script>
+</body>
+</html>

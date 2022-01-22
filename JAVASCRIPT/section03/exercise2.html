@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise2</title>
+</head>
+    <style>
+        table, td {
+            border: 1px solid grey;
+            padding: 10px;
+        }
+    </style>
+<body>
+    <script>
+         document.write("<table>");
+            for(var i = 2; i <= 9; i++){ // 젤 윗줄 2단~9단 표기
+                document.write("<th>"+ i + "단</th>");
+            }
+         document.write("<tr>");
+            for(var x = 1; x <= 9; x++) { // 곱하는 수
+                for( var y = 2; y <= 9; y++) { // 단
+                    document.write("<td>" + y + "*" + x + "=" + x * y + "</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+            
+    </script>
+</body>
+</html>

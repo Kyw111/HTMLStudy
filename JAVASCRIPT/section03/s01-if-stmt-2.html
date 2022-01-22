@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var height = 185;
+        var weight = 74;
+
+        var normal = (height - 100) * 0.9;
+        var underweight = normal - 10;
+        var overweight = normal + 10;
+
+        var result = "정상체중";        // 디폴트값으로 넣어줌 - else로 정상체중을 따로 넣지않고 디폴트값으로 설정함
+        if(weight < underweight || weight > overweight) {
+            if(weight > overweight){
+                result = "과체중";
+            }
+            else if(weight < underweight){
+                result = "체충미달";
+            }
+        }
+
+        document.write("신장=", height, '<br>');
+        document.write("체중=", weight, '<br>');
+        document.write("표문체중=", normal, '<br>');
+        document.write("과체중기준=", overweight, '<br>');
+        document.write("저체중기준=", underweight, '<br>');
+        document.write("결과=", result, '<br>');
+    </script>
+</body>
+</html>

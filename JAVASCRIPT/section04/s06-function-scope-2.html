@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='js/printlist.js'></script>
+    <title>scope</title>
+</head>
+<body>
+    <h1>함수 스코프</h1>
+    
+    <hr>
+    <script>
+        var gval = 99;
+
+        function compute(){
+            gval = 77;  // var를 따로 적어주지 않으므로 값을 변경
+            printlist("[compute] ", 'gval: ', gval);
+        }
+        compute(); // 77
+
+        printlist('[global] ', 'gval: ', gval); // 77
+    </script>
+</body>
+</html>

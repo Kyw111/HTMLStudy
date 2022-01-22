@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Interval</title>
+    <script>
+        
+        var sumfunc = null;
+        
+        (function() {
+            if(sumfunc != null){
+            return;
+        }
+            console.log('작업 등록');
+
+            var sum = 0;
+            var sumtimeout = setTimeout(function () {  // 5초후 실행
+                console.log('작업시작');
+                for(var cnt=1; cnt<=10; cnt++) {
+                    sum += cnt;
+                }
+                console.log("sum = ", sum);
+            }, 5000);
+        })();
+        function stopworking() {
+            console.log(' 작업 취소 ');
+            clearTimeout(sumfunc);
+            sumfunc = null;
+        }
+        
+
+
+    </script>
+</head>
+<body>
+    <h2>타입아웃 테스트</h2>
+    <button onclick="clearTimeout(sumtimeout)">작업취소</button>
+    
+</body>
+</html>

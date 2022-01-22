@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='js/printlist.js'></script>
+    <title>Array</title>
+    <script>
+        function sum(){
+            var s = 0;  // 합계
+            for(var cnt=0; cnt < arguments.length; cnt++){  // cnt 0에서 cnt가 가변인자의 갯수보다 적을때까지
+                s += arguments[cnt];  // 합계 += 가변인자[카운트]
+            }
+            return s;   // 리턴값 : 합계
+        }
+
+        function avg(){
+            var s = 0;  //합계
+            for(var cnt=0; cnt < arguments.length; cnt++){  // cnt 0에서 cnt가 가변인자의 갯수보다 적을때까지
+                s += arguments[cnt];    // 합계 += 가변인자[카운트]
+            }
+            return s / arguments.length;    // 리턴값 : 합계 / 가변인자 총 갯수
+        }
+
+    </script>
+</head>
+<body>
+    <h1>자바스크립트 함수의 가변인자를 활용하여 합계와 평균 구하기</h1>
+    <script>
+        var tot1 = sum(10,20,30);
+        var tot2 = sum(70, 80, 90, 100);
+        var avg1 = avg(10,20,30);
+        var avg2 = avg(70, 80, 90, 100);
+
+        println('tot1 : ', tot1);
+        println('avg1 : ', avg1);
+
+        println('tot2 : ', tot2);
+        println('avg2 : ', avg2);
+        
+    </script>
+</body>
+</html>

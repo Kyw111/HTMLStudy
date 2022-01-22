@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+    <script>
+        /*
+        [ 문제 ]
+        1부터 n까지 1씩 증가하는 수의 곱의 합을 구하라. (1 * 2 * 3 * 4 * 5 . . . n = ?)
+
+        1) 함수 객체를 만들어라.
+        2) 속성 : 증가값, 합계
+        3) 함수 : 계산(n), 출력(col)
+        4) 함수의 형태 : 익명함수, prototype 함수
+
+        */
+    </script>
+</head>
+<body>
+    <script>
+
+        function sumx() {
+        var tot = 1;
+        for(var x = 1; x <= 10; x ++){
+            tot *= x;
+
+            if(x % 10 == 0) {
+                document.write(x + '까지 곱의 합 = ', tot, '<br>');
+            }
+        }
+        document.write('tot = ', tot, '<br>');
+        document.write('<br>');
+        }
+
+        sumx();
+// --------------------------------------------------------------------------------------------------------
+        function sumpara(num) {
+            this.num = num;
+            
+            var tot = 1;
+            for(var x = 1; x <= this.num;  x ++){
+            tot *= x;
+        }
+        document.write('파라미터( ' + this.num + ' )까지의 곱의 합 : ', tot, '<br>');
+
+        }
+        sumpara(10);
+        document.write('<br>');
+        var method1 = new sumpara(6
+        );
+        
+// ---------------------------------------------------------------------------------------------------------
+
+        
+        var example1 = function () {
+
+            
+
+
+        }
+
+
+
+
+
+
+        
+// document.write("<table>");
+//             for(i = 1; i <= 9; i++ ){
+//                 document.write("<tr>"); //테이블로우 9개 만들기
+//                     for(j = 1; j <= 9; j++){
+//                         document.write("<td>", num++, "</td>"); // 테이블데이터 9개 만들기
+//                         // num++;
+//                     }
+//                     document.write("</tr>");
+//             }
+//             document.write("</table>");
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise1</title>
+</head>
+    <style>
+        table, td {
+            border: 1px solid grey;
+        }
+        td {
+            padding: 10px;
+        }
+        .odd {
+            background-color: cornflowerblue;
+        }
+        .even {
+            background-color: tomato;
+        }
+    </style>
+<body>
+    <script>
+
+        var num = 1;
+        
+        document.write("<table>");
+            for(i = 1; i <= 9; i++ ){
+                document.write("<tr>"); //테이블로우 9개 만들기
+                    if(i % 2 == 0){
+                        document.write("<tr class='even'>"); // 짝수라인 빨간색
+                    }
+                    else {
+                        document.write("<tr class='odd'>"); // 홀수라인 파란색
+                    }
+                    for(j = 1; j <= 9; j++){
+                        document.write("<td>", num++, "</td>"); // 테이블데이터 9개 만들기
+                        // num++;
+                    }
+                    document.write("</tr>");
+            }
+            document.write("</table>");
+
+         
+    </script>
+</body>
+</html>

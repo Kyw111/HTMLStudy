@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise1</title>
+</head>
+    <style>
+        table, td {
+            border: 1px solid grey;
+        }
+        td {
+            padding: 10px;
+        }
+        table tr:nth-child(even) {      /* 짝수라인 */
+            background-color: aqua;
+        }
+        table tr:nth-child(odd) {       /* 홀수라인 */
+            background-color: silver;
+        }
+    </style>
+<body>
+    <script>
+
+        var num = 1;
+        
+        document.write("<table>");
+            for(i = 1; i <= 9; i++ ){
+                document.write("<tr>"); //테이블로우 9개 만들기
+                    for(j = 1; j <= 9; j++){
+                        document.write("<td>", num++, "</td>"); // 테이블데이터 9개 만들기
+                        // num++;
+                    }
+                    document.write("</tr>");
+            }
+            document.write("</table>");
+
+         
+    </script>
+</body>
+</html>

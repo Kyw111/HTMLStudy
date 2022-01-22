@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+<body>
+    <h1>자바스크립트 연산자</h1>
+    <p>복합대입연산자</p>
+    <hr>
+    <script>
+        var a = 10;
+        var b = 3;
+
+        document.write('    a : ', a, '<br>');
+        document.write('    b : ', b, '<br>');
+
+        a += b; // a = a+b : 13
+        document.write('(a += b) : ', a, '<br>' );
+
+        a -= b; // a = a-b : 10
+        document.write('(a -= b) : ', a, '<br>' );
+
+        a *= b; // a = a*b : 30
+        document.write('(a *= b) : ', a, '<br>' );
+
+        a /= b; // a = a/b : 10   //위에서 a는 30인 상태이기 때문에 b(3)로 나누면 10이됨
+        document.write('(a /= b) : ', a, '<br>' );
+
+        a %= b; // a = a%b : 1   // 10/3하면 나머지가 1
+        document.write('(a %= b) : ', a, '<br>' );
+
+    </script>
+</body>
+</html>
