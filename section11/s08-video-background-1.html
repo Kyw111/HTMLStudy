@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio MP3 Player</title>
+    <style>
+        #container {
+            position: relative;
+            text-align: center;
+            margin-top: 30%;
+            margin-left: 30%;
+        }
+        #bgvideo {
+            background: url(images/image.jpg);
+            background-size: cover;
+            position : fixed;
+            left: 0;
+            right: 0;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -100;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video tag - 비디오 파일 삽입</h1>
+    <p>source 태그는 여러 미디어 파일을 지정하여 브라우저에서 재생할 파일을 선택</p>
+    <hr>
+    <video controls autoplay loop poster="images/image.jpg">
+    <source src="media/video.mp4" type="video/mp4">
+    </video>
+    <div id="container">
+        <h2>나의 일상을 보여 주는 동영상</h2>
+        <h1>나의 일상</h1>
+    </div>
+</body>
+</html>

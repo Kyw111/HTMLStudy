@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        div {
+            text-align: center;
+        }
+        .box {
+            position : relative;
+            position : absolute;
+            width: 200px;
+            height: 200px;
+            border : 1px solid black;
+            font-size: 30px;
+        }
+        div#container {
+            position : relative;            
+        }
+        #d1 {
+            left: 250px;
+            top: 150px;
+            background: red;
+        }
+        #d2 {
+            left: 200px;
+            top: 30px;
+            background: green;
+        }
+        #d3 {
+            left: 20px;
+            top: 280px;
+            background: blue;
+        }
+        #d4 {
+            left: 110px;
+            top: 170px;
+            background: chocolate;
+        }
+        #d5 {
+            left: 30px;
+            top: 10px;
+            background: darkturquoise;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>z-index - 요소를 쌓는 순서</h1>
+    <p>z-index : 숫자 </p>
+    <p>요소를 배치할 때 가로배치 세로배치에 더해서 깊이를 지정할 수 있다.
+            깊이는 쌓는 순서 z-index 속성을 사용하여 지정할 수 있다.
+    </p>
+    <p>예) z-index:1</p>
+    <hr>
+    <div id="container">
+        <div class="box" id="d1">디비전1</div>
+        <div class="box" id="d2">디비전2</div>
+        <div class="box" id="d3">디비전3</div>
+        <div class="box" id="d4">디비전4</div>
+        <div class="box" id="d5">디비전5</div>
+    </div>
+    
+</body>
+</html>

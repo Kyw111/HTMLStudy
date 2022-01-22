@@ -1,0 +1,73 @@
+
+
+#container { /* 전체틀 */
+     /*position: absolute; 
+    background-color: #fff;
+    border: 1px solid #e7e7e7; */
+    width: 100%;
+    margin: 0 auto;
+}
+#main-myname{ /* 오른쪽덩어리 최상단 이름 */
+    text-align: center;
+    height: 50px;
+    background-color: white;
+}
+.menu-navi { /* 메뉴 네비바 */
+    padding: 5px;
+    margin-right: 8px;
+    background-color: lightgray;
+}
+.menu-navi ul li{
+    display: inline-block;
+}
+.left-box { /* 왼쪽 덩어리 */
+    width : 20%;
+    float: left;
+}
+.right-box { /* 오른쪽 덩어리 */
+    width : 80%;
+    float: right;
+}
+.navi { /* 네비바 */
+    text-align: left;
+    list-style: none;
+}
+.navi ul li{
+    list-style: none;
+    height: 50px;
+}
+.contents1 {
+    text-align: center;
+    margin-right: 50px;
+    float: left;
+    width: 47%;
+}
+.contents2 {
+    text-align: center;
+    float: right;
+    width: 47%;
+}
+/* 테이블 */
+table {
+    width: 100%;
+    border : 1px solid gray;
+    border-collapse: collapse;
+    border-radius: 1px;
+}
+th, td {
+    padding: 1.5px;
+    text-align: center;
+}
+thead tr {
+    background-color: cornflowerblue;
+    color: #ffffff;
+}
+tbody tr:nth-child(2n) {
+    background-color: cornflowerblue;
+}
+tbody tr:nth-child(2n+1) {
+    background-color: gray;
+}
+/* 테이블 끝 */
+
+

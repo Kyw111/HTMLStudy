@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+    text-align: center;
+}
+div {
+    text-align: center;
+}
+#main-box {
+    width: 40%;
+    margin: 10px;
+    position: relative;
+}
+.main-img {
+    opacity: 0.5;
+    margin: 0;
+    width: 100%;
+    /* vertical-align: middle; */
+}
+.main-text {
+    text-align: center;
+    padding: 5px 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.main-text p{
+    color: black;
+}

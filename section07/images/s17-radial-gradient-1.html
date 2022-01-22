@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+        }
+        .radial-gradient1 {
+            background: radial-gradient( red, yellow);
+        }
+        .radial-gradient2 {
+            background: radial-gradient( white 3%,skyblue 7%,blue 12%, navy 20%, black);
+        }
+    </style>
+</head>
+<body>
+    <h1>원형 그라데이션(radial-gradient) - 기본 타원형(ellipse)</h1>
+    <p>모양은 기본형인 타원형(ellipse)과 원형(circle)이 있다.</p>
+    <p>rarial-gradient([최종모양][크기] at [위치], color-stop, [color-stop, ...]</p>
+    <hr>
+    <div class="radial-gradient1"></div>
+    <div class="radial-gradient2"></div>
+</body>
+</html>

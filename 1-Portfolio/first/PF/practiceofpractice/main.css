@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+h2:hover{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    transform: scale(1.1);
+    text-decoration: none; 
+}
+.kong-a{
+    color: black;
+    text-decoration: none; /* 밑줄없애기 */
+    transition: all 0.5s;
+}
+
+.kong-a:hover {
+    color: gray;
+    text-decoration: none;
+    transform: translateX(10px);   /* 호버하면 가로로 움직임 */
+    /* transform:  scale(2);  */
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+video {
+    width: 600px;
+    height: 480px;
+    text-align: center;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+}

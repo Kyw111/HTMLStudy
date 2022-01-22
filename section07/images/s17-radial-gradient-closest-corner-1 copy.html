@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        div {
+            width: 400px;
+            height: 250px;
+        }
+        .radial-gradient1 {
+            background: radial-gradient(circle at 30% 60%, green, white, black);
+        }
+        .radial-gradient2 {
+            background: radial-gradient(circle closest-corner at 30% 60%, green, white, black);
+        }
+        .radial-gradient3 {
+            background: radial-gradient(circle closest-corner at 60% 60%, green, white, black);
+        }
+    </style>
+</head>
+<body>
+    <h1>원형 그라데이션(radial-gradient) - 크기(closet-corner)</h1>
+    <p>그라데이션 가장 자리가 그라데이션 중심에서 가장 가까운 요소의 코너에 만나는 지점</p>
+    <hr>
+    <p>circle</p>
+    <div class="radial-gradient1"></div>
+    <hr>
+    <p>circle closest-corner</p>
+    <div class="radial-gradient2"></div>
+    <hr>
+    <p>circle closest-corner</p>
+    <div class="radial-gradient3"></div>
+</body>
+</html>

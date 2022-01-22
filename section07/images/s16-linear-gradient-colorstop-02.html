@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        .linear-gradient-color-stop{
+            background: linear-gradient(to bottom, red, white 30%, blue);
+        }
+        .linear-gradient-color-stop1{
+            background: linear-gradient(to right bottom, red 25%, orange 75%);
+        }
+        .linear-gradient-color-stop-w60p{
+            background: linear-gradient(to left bottom, red, white 30%, blue 60%, green);
+        }
+    </style>
+</head>
+<body>
+    <h1>선형 그라데이션(linear-gradient) - 색상 중지 점(color stop)</h1>
+    <hr>
+    <div class="linear-gradient-color-stop"></div>
+    <div class="linear-gradient-color-stop1"></div>
+    <div class="linear-gradient-color-stop-w60p"></div>
+</body>
+</html>

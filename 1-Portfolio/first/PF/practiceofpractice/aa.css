@@ -1,0 +1,103 @@
+#container {
+    width: 100%;
+    margin: 0;
+}
+
+/* 헤드 박스 */
+#head {
+    background: rgb(55, 150, 228);
+    text-align: center;
+    height: 550px;
+    /* margin-bottom: 15px; */
+}
+#head h1 {
+    position: absolute;
+    top: 350px;
+    left: 42%;
+}
+#head p {
+    position: absolute;
+    top: 400px;
+    left: 43%;
+    color: white;
+}
+
+/* 메인 박스 */
+#main {
+    background: rgb(1, 28, 49);
+    height: 550px;
+    text-align: center;
+    color: snow;
+}
+#main h1 {
+    position: relative;
+    top: 350px;
+    /* left: 42%; */
+}
+.main-left{
+    /* float: left; */
+    width: 45%;
+    margin-left: 15px;
+}
+.main-left li{
+    margin-bottom: 20px;
+
+}
+.main img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 20px;
+
+}
+
+
+.main-left li, .main-right li{
+    list-style: none;
+}
+/* 경력 박스 */
+#experience {
+    background: rgb(55, 150, 228);
+    height: auto;
+    text-align: center;
+    
+}
+.experience-right{
+    /* float: right; */
+    width: 45%;
+    margin-right: 15px;
+}
+.experience-right li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#navbox {
+    opacity: 0.4;
+    /* position: absolute; */
+}
+#navbox li{
+    list-style: none;
+    display: inline;
+    margin: 20px ;
+    /* border: 1px solid snow;
+    padding: 15px;
+    border-radius: 15px;
+    background: lightgrey; */
+    font-weight: bold;
+}
+
+li button {
+    border: 1px solid snow;
+    padding: 15px;
+    border-radius: 15px;
+    background: lightgrey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+  color: #0d4257; }
