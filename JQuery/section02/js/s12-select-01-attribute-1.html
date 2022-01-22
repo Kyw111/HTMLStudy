@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="js/jquery.js"></script>
+    <script>
+        $(function() { // #container 하위 a태그 중 target을 갖고있는 태그들
+            $("#container a[target]").css({"color" : "#f00"});              // a태그에 속성(target)이 포함되어 있으면 선택
+            $("#container a[href ^= https ]").css({"color" : "#0ff"});    // a태그에 속성(href)의 값이 https로 시작하는 것들 선택
+            $("#container a[href $= net]").css({"color" : "#f0f"});    // a태그에 속성(href)의 값이 .net으로 끝나는 것들 선택
+            $("#container a[href *= google]").css({"color" : "green"});    // a태그에 속성(href)의 값이 google 포함하는 것들 선택
+        });
+    </script>
+<body>
+    <div id="container">
+        <p><a href="http://ezenacademy.co.kr" target="_blank">이젠아카데미</a></p>
+        <p><a href="https://naver.com">네이버</a></p>
+        <p><a href="http://daum.net">다음</a></p>
+        <p><a href="http://google.com">구글</a></p>
+    </div>
+</body>
+</html>

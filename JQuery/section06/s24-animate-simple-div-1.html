@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            background-color: #abc;
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2></h2>
+    <p>power overwhelming show me the money hey hello java javascript hi hello nice to meet you how are you ? i am fine </p>
+    <hr>
+    <p><button id="go">Run</button></p>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+
+    <script>
+        $("#go").click(function(){
+            $(".block").first().animate(
+                {
+                left:100 },
+                {
+                    duration : 1000,
+                    step: function( now, fx ) {
+                        $(".block").slice( 1 ).css( "left", now);
+                    }
+                });
+        });
+    </script>
+</body>
+</html>

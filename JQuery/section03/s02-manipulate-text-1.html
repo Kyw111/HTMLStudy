@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Manipulate</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            var text1 = $('#container').text();  // 선택한 요소의 하위요소를 가져온다
+            console.log('text1 = ', text1);
+
+            $("#container h2").text("HTML 텍스트 변경하기"); // 선택된 요소의 텍스트 변경 - #container h2
+            $("#container p:nth-child(2)").text("연결하기");      // 선택된 요소의 텍스트 변경 - #container p:nth-child(2) // p태그들중 2번째
+        });
+    </script>
+
+    <style>
+        #div1 {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>객체 조작</h1>
+        <div id="container">
+            <h2>HTML 텍스트 조작</h2> <!-- html 텍스트 조작 -> html 텍스트 변경하기-->
+            <p><a href="#">연결</a></p>
+            <p>컨택</p>
+        </div>
+    
+</body>
+</html>

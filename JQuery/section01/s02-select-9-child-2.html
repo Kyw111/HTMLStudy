@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="js/jquery.js"></script>
+    <script>
+        $(function() { // 자식 선택자
+            $('#wrap>h3').css({"border" : "1px solid grey", "background-color" : "yellow"}); // 자식
+            $('#wrap>div').children().css({"background-color" : "grey"}); // children()을 사용하여 자식들을 선택
+        });                                               
+    </script>
+<body>
+    <h1>What is JQuery</h1>
+    <h2 class="title">Javascript Web Framework</h2>
+    <p id="desc">JQuery is fast, small, document traversal and manipulation, event handling, animataion, 
+            and Ajax much simpler withe an easy-to-use API that works across a multitude of browsers, 
+            JQuery is fast, small, document traversal and manipulation, event handling, animataion, 
+            and Ajax much simpler withe an easy-to-use API that works across a multitude of browsers.
+    </p>
+    <p class="api">
+        JQuery is fast, small, document traversal and manipulation, event handling, animataion, power overwhelming, show me the money
+    </p>
+    <ul id="wrap">
+        <h3>Other project have API docs in other locations:</h3>
+        <div> <!-- div 자식들 모두적용됨-->
+            <p>Application Programming Interface</p> <!-- 적용됨-->
+            <ol> <!-- 적용됨-->
+                <li id="ui-api">UI APIs</li> <!-- 적용됨-->
+                <li>Mobile APIs</li> <!-- 적용됨-->
+                <li>QUnit APIs</li> <!-- 적용됨-->
+            </ol> <!-- 적용됨-->
+        </div>
+            
+    
+    </ul>
+        
+    
+        
+</body>
+</html>

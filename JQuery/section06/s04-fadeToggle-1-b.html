@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Effect</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        // $(function() {
+        //     $(".no-1").on("click", function() {
+        //         $(".no-2").fadeToggle(1000, "swing");
+        //     });
+        // });
+
+        $(function(){
+            $("no-1").click(function() {
+                $("no-2").css({ "opacity" : "1"});
+            });
+        });
+
+    </script>
+    <style>
+        .content {
+            width: 200px;
+            height: 100px;
+            /* background-color: #ccc; */
+        }
+        .no-2 {
+            opacity: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        <img src="../images/sample-1.jpg"  class="btnToggle">
+    </p>
+    <div class="container">
+        <div class="content">
+            <h1 class="no-1">대충 제목</h1>
+            <p class="no-2">대충 이러저러한 본문 내용.<br>
+                    실습해보는것이다.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+
+            $(".btn-1.on").on("mouseover focus", function() {
+                alert(" 버튼1 마우스 이동 이벤트!");
+            });
+            $(".btn-1").addClass("on");
+
+            $(document).on("mouseover focus", ".btn-2.on", function() {
+                $('body').css("background-color", "#ccc");
+            });
+            $(document).on("mouseleave", ".btn-2.on", function (){
+                $("body").css("background-color", "#fff");
+            })
+            $(".btn-2").addClass("on");
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <p><button class="btn-1">버튼1</button></p>
+        <p><button class="btn-2">버튼2</button></p>
+    </div>
+</body>
+</html>

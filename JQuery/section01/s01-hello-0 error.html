@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Hello</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        /* function 으로 감싸주지 않으면 헤드부터 바디순으로 코드를 읽음
+        body가 아직 실행되지 않아서 #title이 생성되지 않은 상태로
+        원하는 태그를 찾지못함.
+        */
+        $('#title').css("color", "blue"); // 검은색으로 나옴
+        
+    </script>
+</head>
+<body>
+    <h1 id="title">제이쿼리 시작 ! ! !</h1>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Event</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            $(document).on("mousemove", function(evt) {
+                var clientxy = evt.clientX + ", " + evt.clientY;
+                var pagexy = evt.pageX + ", " + evt.pageY;
+                var screenxy = evt.screenX + ", " + evt.screenY;
+                var layerxy = evt.layerX + ", " + evt.layerY;
+                $(".client-xy").text(clientxy);
+                $(".page-xy").text(pagexy);
+                $(".screen-xy").text(screenxy);
+                $(".layer-xy").text(layerxy);
+            });
+
+            $("#container").on("mousemove", function(evt) {
+                var clientxy = evt.clientX + ", " + evt.clientY;
+                var pagexy = evt.pageX + ", " + evt.pageY;
+                var screenxy = evt.screenX + ", " + evt.screenY;
+                var layerxy = evt.layerX + ", " + evt.layerY;
+                $(".client-xy2").text(clientxy);
+                $(".page-xy2").text(pagexy);
+                $(".screen-xy2").text(screenxy);
+                $(".layer-xy2").text(layerxy);
+            });
+        });
+    </script>
+
+    <style>
+        div {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>mousemove event</h1>
+    <hr>
+    <div>
+        <p> client x,y : <span class="client-xy"></span></p>
+        <p>   page x,y : <span class="page-xy"></span></p>
+        <p> screen x,y : <span class="screen-xy"></span></p>
+        <p> layer  x,y : <span class="layer-xy"></span></p>
+    </div>
+
+    <div id="container">
+        <p> client x,y : <span class="client-xy2"></span></p>
+        <p>   page x,y : <span class="page-xy2"></span></p>
+        <p> screen x,y : <span class="screen-xy2"></span></p>
+        <p> layer  x,y : <span class="layer-xy2"></span></p>
+    </div>
+
+</body>
+</html>

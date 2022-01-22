@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            // 이벤트 등록 메소드인 delegate()는 선택한 요소의 하위 요소에 이벤트를 등록
+            $(".btn-wrap").delegate(".btn-1.on", "mouseover focus", function() { 
+                alert(" 버튼1 마우스 이동 이벤트!");
+            });
+            $(".btn-1").addClass("on");
+
+            $("#container").delegate(".btn-2.on", "mouseover focus", function() { 
+                alert(" 버튼2 마우스 이동 이벤트!");
+            });
+            $(".btn-2").addClass("on");
+
+            $(".btn-wrap").delegate(".btn-3.on", "mouseover focus", function() { 
+                alert(" 버튼3 마우스 이동 이벤트!");
+            }); // .btn-3 는 .btn-wrap의 하위요소가 아니라서 delegate()를 해도 이벤트를 받을수가 없음.
+            $(".btn-3").addClass("on");
+
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <p class="btn-wrap">
+            <button class="btn-1">버튼1</button>
+        </p>
+        <p>
+            <button class="btn-2">버튼2</button>
+        </p>
+        <p>
+            <button class="btn-3">버튼3</button>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Effect</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            $(".txt1").animate({marginLeft : "300px"}, 1000);                   // 곧 바로 실행
+            $(".txt2").delay(2000).animate({marginLeft : "300px"}, 1000); // 2초 후 실행
+            $(".txt5").delay(2000).animate({marginLeft : "300px"}, 1000); // 2초 후 실행
+
+            $(".btn1").on("click", function(){
+                $('.txt2').stop();
+            });
+
+            $(".btn2").on("click", function() {
+                $(".txt3").animate({marginLeft : "+=50px"}, 500); 
+                $(".txt4").animate({marginLeft : "+=50px"}, 500);
+                $(".txt4").stop();
+
+                $(".txt5").stop(true, true); // 애니메이션 정지
+            })
+
+            $(".btn3").on("click", function() {
+                $(".txt4").stop();
+                $(".txt5").stop(true, true);
+            })
+        });
+
+    </script>
+    <style>
+        p { width : 100px; text-align: center;}
+        .txt1 {
+            background-color: cyan;
+        }
+        .txt2 {
+            background-color: crimson;
+        }
+        .txt3 {
+            background-color: blueviolet;
+        }
+        .txt4 {
+            background-color: deeppink;
+        }
+        .txt5 {
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <p class="txt1">애니메이션 1</p>
+    <p class="txt2">애니메이션 2</p>
+    <p><button class="btn1">애니메이션 2 정지</button></p>
+    <p class="txt3">애니메이션 3</p>
+    <p class="txt4">애니메이션 4</p>
+    <p><button class="btn2">애니메이션 정지</button></p>
+    <p class="txt5">애니메이션 5</p>
+
+</body>
+</html>

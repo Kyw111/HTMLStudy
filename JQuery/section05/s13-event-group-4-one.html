@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            // one()은 선택한 이벤트가 딱 1회만 발생한다.
+            // 1회가 발생하면 자동으로 등록된 이벤트가 제거됨 
+            // 1) 마우스 이동(mouseover)시 한번 처리
+            // 2) 마우스 클릭하면 포커스(focus) 한번 처리
+            $(document).one("mouseover focus", ".btn-2.on", function() { 
+                alert(" 버튼2 one()메소드로 한 번만 처리!");
+            });
+            $(".btn-2").addClass("on");
+
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <p class="btn-wrap">
+            <button class="btn-1">버튼1</button>
+        </p>
+        <p>
+            <button class="btn-2">버튼2</button>
+        </p>
+    </div>
+</body>
+</html>

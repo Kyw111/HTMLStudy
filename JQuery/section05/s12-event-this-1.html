@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+
+            $(".menu-main a").on("click", function(e){
+                e.preventDefault();
+
+                $(".menu-main a").css({"background-color" : "#fff"});
+
+                $(this).css({"background-color" : "#ff0"}); 
+                //여기서 this는 .menu-main a태그들을 말함
+            });
+            $(".menu-help a").on("click", function(e){
+                e.preventDefault();
+
+                $(".menu-help a").css({"background-color" : "#fff"});
+
+                var idx = $(".menu-help a").index(this);
+                $(".menu-help a").eq(idx).css({"background-color" : "#0ff"});
+
+                $(".idx-menu-help").text( "메뉴인덱스 : ", idx);
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <h2>$(this)</h2>
+    <ul class="menu-main">
+        <li><a href="#">파일</a></li>
+        <li><a href="#">편집</a></li>
+        <li><a href="#">보기</a></li>
+        <li><a href="#">실행</a></li>
+    </ul>
+    <h2>Index( x )</h2>
+    <ul class="menu-help">
+        <li><a href="#">도움말</a></li>
+        <li><a href="#">가이드</a></li>
+        <li><a href="#">온라인</a></li>
+    </ul>
+    <p class="idx-menu-help"></p>
+</body>
+</html>
